@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="apriltag"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\opencv4\;CMake Files\..\..\..\..\..\usr\local\opencv4\lib\;CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\opencv4\;CMake Files\CMake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apriltag_demo">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/apriltag_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 apriltag_demo"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apriltag_demo/fast">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/apriltag_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 apriltag_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apriltag_python">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 apriltag_python"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_demo">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/opencv_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 opencv_demo"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="opencv_demo/fast">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/opencv_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 opencv_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apriltag">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/libapriltag.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 apriltag"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apriltag/fast">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/libapriltag.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 apriltag/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="go_apriltag">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/go_apriltag" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 go_apriltag"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="go_apriltag/fast">
+				<Option output="/home/horizon/go-work/src/apriltag/cmake-build-release/go_apriltag" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/horizon/go-work/src/apriltag"/>
+					<Add directory="/apriltag"/>
+					<Add directory="/usr/local/opencv4/include/opencv4"/>
+					<Add directory="/usr/local/opencv4/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 go_apriltag/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/horizon/go-work/src/apriltag/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/horizon/go-work/src/apriltag/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/horizon/go-work/src/apriltag/apriltag.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/apriltag.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/apriltag_pose.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/apriltag_pose.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/apriltag_quad_thresh.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/g2d.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/g2d.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/getopt.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/getopt.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/homography.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/homography.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8x3.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8x3.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8x4.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/image_u8x4.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/matd.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/matd.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pam.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pam.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pjpeg-idct.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pjpeg.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pjpeg.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pnm.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/pnm.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/string_util.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/string_util.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/svd22.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/svd22.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/time_util.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/time_util.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/unionfind.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/unionfind.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/workerpool.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/workerpool.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zarray.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zarray.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zhash.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zhash.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zmaxheap.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/common/zmaxheap.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/detect_apriltag.cpp">
+			<Option target="apriltag"/>
+			<Option target="go_apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/detect_apriltag.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/example/apriltag_demo.c">
+			<Option target="apriltag_demo"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/example/opencv_demo.cc">
+			<Option target="opencv_demo"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/main.cpp">
+			<Option target="apriltag"/>
+			<Option target="go_apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag16h5.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag16h5.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag25h9.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag25h9.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag36h11.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tag36h11.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCircle21h7.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCircle21h7.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCircle49h12.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCircle49h12.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCustom48h12.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagCustom48h12.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagStandard41h12.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagStandard41h12.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagStandard52h13.c">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/tagStandard52h13.h">
+			<Option target="apriltag"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/../../../../../usr/local/opencv4/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/../../../../../usr/local/opencv4/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/../../../../../usr/local/opencv4/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/../../../../../usr/local/opencv4/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\opencv4\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/horizon/go-work/src/apriltag/CMake/apriltagConfig.cmake.in">
+			<Option virtualFolder="CMake Files\CMake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

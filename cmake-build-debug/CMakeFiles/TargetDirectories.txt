@@ -1,0 +1,11 @@
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/apriltag_demo.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/apriltag_python.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/opencv_demo.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/apriltag.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/go_apriltag.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/install.dir
+/home/horizon/go-work/src/apriltag/cmake-build-debug/CMakeFiles/install/local.dir
