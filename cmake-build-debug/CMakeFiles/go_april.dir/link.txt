@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/go_april.dir/main.cpp.o  -o go_april   -L/usr/local/cuda-10.2/lib64 
