@@ -1,5 +1,0 @@
-/home/horizon/Desktop/clion-2020.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/horizon/go-work/src/apriltag
-/usr/local/opencv4/include/opencv4
--- Configuring done
--- Generating done
--- Build files have been written to: /home/horizon/go-work/src/apriltag/cmake-build-release
