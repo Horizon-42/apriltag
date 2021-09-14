@@ -9,30 +9,30 @@
 
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
-typedef cv::Mat* Mat;
+typedef cv::Mat *Mat;
 using namespace std;
 #else
 typedef void *Mat;
 #endif
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #include "apriltags/TagDetector.h"
 #include "apriltags/Tag16h5.h"
 #include "apriltags/Tag25h7.h"
 #include "apriltags/Tag25h9.h"
 #include "apriltags/Tag36h9.h"
 #include "apriltags/Tag36h11.h"
-#include "common/getopt.h"
 #endif
 
-bool Init(float decimate, float blur, int threads);
+    bool Init(float decimate, float blur, int threads);
 
-int HaveAprilTags(Mat frame);
+    int HaveAprilTags(Mat frame);
 
-int DetectAprilTags(Mat frame);
+    int DetectAprilTags(Mat frame);
 
-void Close();
+    void Close();
 
 #ifdef __cplusplus
 };
