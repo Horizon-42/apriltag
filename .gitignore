@@ -8,3 +8,5 @@ build/
 
 .idea
 cmake-*
+
+.vscode

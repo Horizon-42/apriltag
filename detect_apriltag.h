@@ -9,6 +9,8 @@
 
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
+#include "apriltags/TagDetector.h"
+
 typedef cv::Mat *Mat;
 using namespace std;
 #else
@@ -18,7 +20,6 @@ typedef void *Mat;
 #ifdef __cplusplus
 extern "C"
 {
-#include "apriltags/TagDetector.h"
 #include "apriltags/Tag16h5.h"
 #include "apriltags/Tag25h7.h"
 #include "apriltags/Tag25h9.h"
@@ -26,11 +27,9 @@ extern "C"
 #include "apriltags/Tag36h11.h"
 #endif
 
-    bool Init(float decimate, float blur, int threads);
+    bool Init();
 
     int HaveAprilTags(Mat frame);
-
-    int DetectAprilTags(Mat frame);
 
     void Close();
 
