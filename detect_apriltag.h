@@ -8,16 +8,36 @@
 #include <stdbool.h>
 
 #ifdef __cplusplus
+
 #include <opencv2/opencv.hpp>
 #include "apriltags/TagDetector.h"
 
+class TagDetector {
+    AprilTags::TagDetector *detector;
+    AprilTags::TagCodes *tagCodes;
+public:
+    TagDetector();
+
+    ~TagDetector();
+
+    int CountTags(cv::Mat const &frame);
+};
+
 typedef cv::Mat *Mat;
 using namespace std;
+
+typedef TagDetector *TagDetectorPtr;
+
 #else
 typedef void *Mat;
+typedef void *TagDetectorPtr;
 #endif
 
 #ifdef __cplusplus
+
+
+
+
 extern "C"
 {
 #include "apriltags/Tag16h5.h"
@@ -27,11 +47,15 @@ extern "C"
 #include "apriltags/Tag36h11.h"
 #endif
 
-    bool Init();
+TagDetectorPtr NewTagDetector();
+void ReleaseTagDetector(TagDetectorPtr detector);
+int CountTags(TagDetectorPtr detector, Mat frame);
 
-    int HaveAprilTags(Mat frame);
+bool Init();
 
-    void Close();
+int HaveAprilTags(Mat frame);
+
+void Close();
 
 #ifdef __cplusplus
 };

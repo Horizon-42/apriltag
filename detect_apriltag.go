@@ -1,14 +1,13 @@
 package go_apriltag
 
 /*
-#cgo CPPFLAGS: -I /usr/local/include -I /usr/local/opencv4/include/opencv4 -I /usr/local/include/apriltag -I /usr/local/include/apriltag/common
-#cgo LDFLAGS: -L /usr/local/lib -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lopencv_objdetect -lopencv_dnn -lapriltag
+#cgo CPPFLAGS: -I /usr/local/include -I /usr/local/opencv4/include/opencv4 -I /usr/local/include/apriltags -I /usr/include/eigen3
+#cgo LDFLAGS: -L /usr/local/lib -L /usr/local/opencv4/lib -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lopencv_objdetect -lopencv_dnn -lethz_apriltag2 -lopencv_cudev -lopencv_cudafilters
 #include <stdlib.h>
 #include "detect_apriltag.h"
 */
 import "C"
 import (
-	"fmt"
 	"gocv.io/x/gocv"
 )
 
@@ -24,21 +23,32 @@ func (m *Mat) Ptr() C.Mat {
 	return m.p
 }
 
-func Init(decimate, blur float32, threads int) bool {
-	return bool(C.Init(C.float(decimate), C.float(blur), C.int(threads)))
+type TagDetector struct {
+	detecorPtr C.TagDetectorPtr
+}
+
+func (td *TagDetector) CountAprilTags(frame gocv.Mat) int {
+	src := Mat{}
+	src.MatSetP(frame)
+	return int(C.CountTags(td.detecorPtr, src.Ptr()))
+}
+
+func NewTagDetector() *TagDetector {
+	return &TagDetector{detecorPtr: C.NewTagDetector()}
+}
+
+func DestoryTagDetector(detector *TagDetector) {
+	C.ReleaseTagDetector(detector.detecorPtr);
+}
+
+func Init() bool {
+	return bool(C.Init())
 }
 
 func HaveAprilTags(frame gocv.Mat) int {
 	src := Mat{}
 	src.MatSetP(frame)
 	return int(C.HaveAprilTags(src.Ptr()))
-}
-
-func DetectAprilTags(frame gocv.Mat) int {
-	src := Mat{}
-	src.MatSetP(frame)
-	fmt.Println(frame.Size())
-	return int(C.DetectAprilTags(src.Ptr()))
 }
 
 func Close() {

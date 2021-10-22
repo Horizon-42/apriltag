@@ -3,7 +3,7 @@
 int main()
 {
     auto m_cap = cv::VideoCapture(0);
-    Init();
+    auto detector = NewTagDetector();
     if (!m_cap.isOpened())
     {
         cerr << "ERROR: Can't find video device " << 0 << "\n";
@@ -14,7 +14,7 @@ int main()
     while (42)
     {
         m_cap >> image;
-        auto res = HaveAprilTags(&image);
+        auto res = detector->CountTags(image);
         std::cout << res << "\n";
         cv::imshow("frame", image);
         if (char(cv::waitKey(5) == 27))
@@ -22,6 +22,6 @@ int main()
             break;
         }
     }
-    Close();
+    ReleaseTagDetector(detector);
     return 0;
 }
