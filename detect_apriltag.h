@@ -21,6 +21,8 @@ public:
     ~TagDetector();
 
     int CountTags(cv::Mat const &frame);
+
+    bool DetectTags(cv::Mat const &frame, cv::Mat &points);
 };
 
 typedef cv::Mat *Mat;
@@ -36,8 +38,6 @@ typedef void *TagDetectorPtr;
 #ifdef __cplusplus
 
 
-
-
 extern "C"
 {
 #include "apriltags/Tag16h5.h"
@@ -50,6 +50,7 @@ extern "C"
 TagDetectorPtr NewTagDetector();
 void ReleaseTagDetector(TagDetectorPtr detector);
 int CountTags(TagDetectorPtr detector, Mat frame);
+bool DetectTags(TagDetectorPtr detector, Mat frame, Mat points);
 
 bool Init();
 

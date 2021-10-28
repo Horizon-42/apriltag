@@ -8,6 +8,7 @@ package go_apriltag
 */
 import "C"
 import (
+	"fmt"
 	"gocv.io/x/gocv"
 )
 
@@ -33,12 +34,35 @@ func (td *TagDetector) CountAprilTags(frame gocv.Mat) int {
 	return int(C.CountTags(td.detecorPtr, src.Ptr()))
 }
 
+func (td TagDetector) DetectAprilTags(frame gocv.Mat) ([]float64, []int) {
+	src := Mat{}
+	src.MatSetP(frame)
+	points := gocv.NewMat()
+	input := Mat{}
+	input.MatSetP(points)
+	ret := bool(C.DetectTags(td.detecorPtr, src.Ptr(), input.Ptr()))
+	var res []float64
+	var ids []int
+	if ret {
+		pointsNum := points.Rows()
+		res = make([]float64, pointsNum*2)
+		ids = make([]int, pointsNum)
+		for i := 0; i < pointsNum; i++ {
+			res[i*2] = float64(points.GetFloatAt(i, 0))
+			res[i*2+1] = float64(points.GetFloatAt(i, 1))
+			ids[i] = int(points.GetFloatAt(i, 2))
+			fmt.Printf("%v, %v at %v;\n", res[i*2], res[i*2+1], ids[i])
+		}
+	}
+	return res, ids
+}
+
 func NewTagDetector() *TagDetector {
 	return &TagDetector{detecorPtr: C.NewTagDetector()}
 }
 
 func DestoryTagDetector(detector *TagDetector) {
-	C.ReleaseTagDetector(detector.detecorPtr);
+	C.ReleaseTagDetector(detector.detecorPtr)
 }
 
 func Init() bool {
