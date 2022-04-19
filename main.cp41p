@@ -19,6 +19,6 @@ int main() {
             break;
         }
     }
-    ReleaseTagDetector(detector);
+    ReleaseTagDetector(&detector);
     return 0;
 }
