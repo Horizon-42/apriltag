@@ -48,9 +48,10 @@ extern "C"
 #endif
 
 TagDetectorPtr NewTagDetector();
-void ReleaseTagDetector(TagDetectorPtr detector);
+void ReleaseTagDetector(TagDetectorPtr *detector);
 int CountTags(TagDetectorPtr detector, Mat frame);
 bool DetectTags(TagDetectorPtr detector, Mat frame, Mat points);
+bool IsEmpty(TagDetectorPtr detector);
 
 bool Init();
 

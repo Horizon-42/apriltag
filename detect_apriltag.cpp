@@ -4,7 +4,7 @@
 
 #include "detect_apriltag.h"
 
-#define DEBUG
+//#define DEBUG
 
 AprilTags::TagDetector *m_tagDetector(NULL);
 AprilTags::TagCodes *m_tagCodes(NULL);
@@ -76,6 +76,7 @@ bool TagDetector::DetectTags(const cv::Mat &frame, cv::Mat &points) {
     else
         image_gray = frame.clone();
     vector<AprilTags::TagDetection> detections = detector->extractTags(image_gray);
+//    std::cout<<detections.size()<<"\n";
     image_gray.release();
     bool ret = false;
     if (detections.size() > 0) {
@@ -85,7 +86,7 @@ bool TagDetector::DetectTags(const cv::Mat &frame, cv::Mat &points) {
             points.at<float>(i, 1) = detections[i].cxy.second;
             points.at<float>(i, 2) = detections[i].id;
         }
-#ifdef DEBUG
+//#ifdef DEBUG
         for (int i = 0; i < detections.size(); ++i) {
             cv::circle(frame, {int(detections[i].cxy.first), int(detections[i].cxy.second)}, 3,
                        {0, 255, 0}, -1);
@@ -93,8 +94,7 @@ bool TagDetector::DetectTags(const cv::Mat &frame, cv::Mat &points) {
                         {int(detections[i].p[0].first), int(detections[i].p[0].second)}, 0,
                         .5, {0, 0, 255});
         }
-        cv::namedWindow("show", cv::WINDOW_GUI_NORMAL);
-#endif
+//#endif
         ret = true;
     }
     vector<AprilTags::TagDetection>().swap(detections);
@@ -105,10 +105,10 @@ TagDetectorPtr NewTagDetector() {
     return new TagDetector;
 }
 
-void ReleaseTagDetector(TagDetectorPtr detector) {
-    if (detector != NULL) {
-        delete detector;
-        detector = NULL;
+void ReleaseTagDetector(TagDetectorPtr *detector) {
+    if (*detector != NULL) {
+        delete (*detector);
+        *detector = NULL;
     }
 }
 
@@ -118,4 +118,8 @@ int CountTags(TagDetectorPtr detector, Mat frame) {
 
 bool DetectTags(TagDetectorPtr detector, Mat frame, Mat points) {
     return detector->DetectTags(*frame, *points);
+}
+
+bool IsEmpty(TagDetectorPtr detector){
+    return detector==NULL;
 }
