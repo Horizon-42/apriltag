@@ -38,10 +38,9 @@ AprilTagDetector::DetectAprilTags(const cv::Mat &frame) {
 }
 
 PYBIND11_MODULE(ApriltagsDetector, m) {
-NDArrayConverter::init_numpy();
+    NDArrayConverter::init_numpy();
 
-py::class_<AprilTagDetector>(m, "AprilTagDetector")
-.def(py::init<>())
-.def("set_texture_map", &AprilTagDetector::DetectAprilTags)
-
+    py::class_<AprilTagDetector>(m, "AprilTagDetector")
+            .def(py::init<>())
+            .def("detect_april_tags", &AprilTagDetector::DetectAprilTags);
 }
