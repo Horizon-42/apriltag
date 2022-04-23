@@ -36,10 +36,18 @@ endif ()
 find_package(pybind11 CONFIG REQUIRED)
 if (pybind11_FOUND)
     INCLUDE_DIRECTORIES(${pybind11_INCLUDE_DIRS})
+    message("pybind11 ${pybind11_VERSION} found (include: ${pybind11_INCLUDE_DIRS}).")
 else ()
     message('pybind11 not found')
 endif ()
 
+include_directories(/usr/local/lib/python3.8/dist-packages/numpy/core/include/)
 
-add_executable(${PROJECT_NAME} main.cp41p detect_apriltag.cpp)
-target_link_libraries(${PROJECT_NAME} libethz_apriltag2.so ${OpenCV_LIBS})
+add_subdirectory(ethz_apriltag2)
+
+add_executable(${PROJECT_NAME} main.cpp detect_apriltag.cpp ndarray_converter.cpp ndarray_converter.h)
+
+add_library(ApriltagsDetector SHARED AprilTagDetector.cpp AprilTagDetector.h ndarray_converter.cpp ndarray_converter.h)
+
+target_link_libraries(${PROJECT_NAME} ethz_apriltag2 ${OpenCV_LIBS})
+target_link_libraries(ApriltagsDetector ethz_apriltag2 ${PYTHON_LIBRARIES} ${OpenCV_LIBS})
