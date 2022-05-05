@@ -13,11 +13,14 @@
 #include "apriltags/TagDetector.h"
 #include "ndarray_converter.h"
 
+#include <apriltags/Tag36h11.h>
+
 namespace py = pybind11;
 
-class AprilTagDetector {
+class AprilTagDetector
+{
 private:
-    AprilTags::TagDetector detector;
+    std::shared_ptr<AprilTags::TagDetector> detector;
 
 public:
     AprilTagDetector();
@@ -27,5 +30,4 @@ public:
     std::vector<float> DetectAprilTags(cv::Mat const &frame);
 };
 
-
-#endif //APRILTAGTEST_APRILTAGDETECTOR_H
+#endif // APRILTAGTEST_APRILTAGDETECTOR_H

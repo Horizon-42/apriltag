@@ -52,3 +52,4 @@ add_library(ApriltagsDetector SHARED AprilTagDetector.cpp AprilTagDetector.h nda
 target_link_libraries(${PROJECT_NAME} ethz_apriltag2 ${OpenCV_LIBS})
 target_link_libraries(ApriltagsDetector ethz_apriltag2 ${PYTHON_LIBRARIES} ${OpenCV_LIBS})
 set_target_properties(ApriltagsDetector PROPERTIES PREFIX "")
+set(LIBRARY_OUTPUT_PATH ../)
